@@ -2,7 +2,7 @@
 const resultElement = document.querySelector(".result");
 
 const fetchPromise = fetch(
-    "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json",
+    "https://raw.githubusercontent.com/lichfolky/promises/main/data/meteo.json",
 );
 
 fetchPromise
@@ -13,6 +13,8 @@ fetchPromise
         return response.json();
     })
     .then((data) => {
-        resultElement.textContent = data;
-        console.log(data);
+        resultElement.textContent = `${data.city} ${data.temperature}`;
     });
+
+
+/// simulate bandwidth throttling + disable cache

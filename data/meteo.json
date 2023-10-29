@@ -1,6 +1,6 @@
 {
     "city":"Rome",
-    "temperature":"18",
+    "temperature":"+18",
     "description":"Sunny",
-    "perc-rain":"0"
+    "perc-rain":"0%"
 }
