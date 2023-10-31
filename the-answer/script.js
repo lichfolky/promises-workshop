@@ -1,8 +1,10 @@
 import { algoritmoSuperComplesso } from "../utils.js";
-const resultElement = document.querySelector(".result");
 
 // Questa operazione richiede molto tempo per terminare
 const sum = algoritmoSuperComplesso();
 
-// quando ha terminato aggiorno il testo
+// aggiorno il risultato sulla pagina
+const resultElement = document.querySelector(".result");
 resultElement.textContent = `Il risultato è ${sum}`;
+
+console.log("Questa operazione è indipendente dal risultato");

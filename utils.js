@@ -50,6 +50,7 @@ function shuffle(array) {
 /* ASYNC UTILS */
 
 /* Una promise sleep */
-export function sleep(time) {
-    return new Promise(resolve => setTimeout(resolve, time));
+export async function sleep(time) {
+    return new Promise(resolve =>
+        setTimeout(() => resolve('Ok mi sono svegliato!'), time * 1000));
 }

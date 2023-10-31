@@ -5,12 +5,5 @@ function miaCallback() {
     elementButton.classList.toggle("green");
 };
 
-function funzioneAsincrona(callback) {
-    console.log("compito molto complesso");
-    callback();
-}
-
-funzioneAsincrona(miaCallback);
-
 elementButton.addEventListener("click", miaCallback);
-console.log("Questo console log lo sto facendo mentre aspetto che venga cliccato il pulsante");
+console.log("Aspetto che venga cliccato il pulsante");
