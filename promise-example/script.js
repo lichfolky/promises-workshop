@@ -5,8 +5,11 @@ const resultElement = document.querySelector(".result");
 // restituisce un messaggio dopo il numero di secondi 
 // paassato come parametro
 const fetchPromise = sleep(2);
+console.log('fetch fuori dal then: ', fetchPromise);
 
-fetchPromise.then((msg) => {
+const test = fetchPromise.then((msg) => {
+    console.log('fetch dentro al then: ', fetchPromise);
+
     resultElement.textContent = msg;
 })
 

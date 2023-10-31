@@ -5,6 +5,7 @@ const fetchPromise = fetch(
 
 fetchPromise
     .then((response) => {
+        console.log(response);
         if (response.ok) {
             return response.json();
         } else {
@@ -12,6 +13,7 @@ fetchPromise
         }
     })
     .then((data) => {
+        console.log(data);
         const resultElement = document.querySelector(".result");
         resultElement.textContent = `${data.city} ${data.temperature}`;
     })

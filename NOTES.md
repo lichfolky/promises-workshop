@@ -1,9 +1,9 @@
 
 ciao a tutti
-se avete domande o non capite qualcosa segnalatelo con la manina
+se avete domande o non capite qualcosa segnalatelo con la manina, è importante seguire tutti i passaggi, webcam
 
 questo è un argomento, complicato vi fornirò 
-le basi ma ci vorrà un po' per utilizzare questi strumenti con disinvoltura
+delle basi ma ci vorrà un po' per utilizzare questi strumenti con disinvoltura
 
 spiego **programmazione sincrona** , inizializzazione che operazione algebrica, stessa cosa con funzioni
 
@@ -12,6 +12,8 @@ faccio vedere **domanda** poi esperimento `the-answer` e poi **risposta**
 parlo della **moka**
 
 testo introduttivo alla **programmazione asincrona**
+
+solitamente le funzioni asincrone sono web api fornite dal browser a funzionalità del linguaggio
 
 la **le callback** è una funzione che possiamo passiamo come parametro ad una funzione
 e questa verrà eseguita callback
@@ -38,8 +40,6 @@ console.log('fetch fuori dal then: ',fetchPromise);
 console.log('fetch dentro al then: ', fetchPromise);
 
 ``` 
-
-
 
 `fetch-example`
 
